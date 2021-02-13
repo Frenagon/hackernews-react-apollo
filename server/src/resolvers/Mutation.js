@@ -9,7 +9,7 @@ async function post(parent, args, context, info) {
     data: {
       url: args.url,
       description: args.description,
-      postedBy: { connect: { id: userId || 2 } },
+      postedBy: { connect: { id: userId } },
     },
   });
   context.pubsub.publish("NEW_LINK", newLink);
