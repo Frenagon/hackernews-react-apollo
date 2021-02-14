@@ -56,7 +56,7 @@ const CreateLink = () => {
         },
       });
     },
-    onCompleted: () => history.push("/"),
+    onCompleted: () => history.push("/new/1"),
   });
 
   return (
